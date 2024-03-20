@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import './App.css'
+
 import UploadFiles from './components/UploadFiles'
 import AudioItems from './components/AudioItems'
 import TimeSlider from 'react-input-slider'
@@ -15,6 +15,7 @@ import { CgMenuGridR } from 'react-icons/cg'
 import { IconContext } from 'react-icons/lib'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import './App.css'
 const databaseRef = database.ref('Audios')
 
 const findIndex = (id, array) => {
@@ -151,11 +152,18 @@ function App() {
   }
   return (
     <div className='container-w'>
+      <div className='marquee'>
+        <div className='marquee__inner'>
+          <p className='marquee__line'>List songs by Nguyen Thi Thanh Vinh</p>
+          <p className='marquee__line'>List songs by Nguyen Thi Thanh Vinh</p>
+        </div>
+      </div>
       <UploadFiles
         toggleFormUpload={toggleFormUpload}
         handleToggleFormUpload={onToggleFormUpload}
         handleUploadSong={handleUploadSong}
       />
+
       <div>
         {!toggleListAudio ? (
           <div onClick={onToggleListAudio}>
