@@ -1,0 +1,39 @@
+.song-list {
+    display: block;
+    overflow-y: auto;
+    max-height: 450px;
+}
+.song-list::-webkit-scrollbar {
+    width: 5px;
+    background-color: #ffffff;
+}
+.song-list::-webkit-scrollbar-thumb {
+    background-color: #dd71cd;
+}
+.song {
+    list-style: none;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.35s all ease-in-out;
+}
+.song:hover {
+    background-color: #dd71cd;
+}
+.song.active {
+    background-color: #dd71cd;
+}
+.song-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 5px;
+    object-fit: cover;
+}
+.song-name-artist {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+}

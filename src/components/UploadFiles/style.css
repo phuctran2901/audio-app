@@ -1,0 +1,87 @@
+.form-upload {
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+
+    position: absolute;
+    top: -400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #56184d;
+    opacity: 0.8;
+    border-radius: 8px;
+    box-shadow: 4px 3px 7px black;
+    text-align: center;
+    z-index: 9999;
+    transition: all 0.35s ease;
+}
+.files-title {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+}
+.files-input {
+    font-size: 9px;
+    margin-bottom: 15px;
+    color: white;
+}
+.files-button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+}
+.files-button:focus {
+    outline: none;
+}
+.files-button__icon {
+    color: #ffffff;
+}
+.files-name {
+    color: #ffffff;
+    font-size: 12px;
+    padding-right: 5px;
+}
+.files-text {
+    outline: none;
+    margin-top: 25px;
+    color: white;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    box-shadow: 2px 3px 10px solid black;
+}
+.files-text::placeholder {
+    color: white;
+}
+.files-button__upload {
+    outline: none;
+    float: right;
+    display: block;
+    background-color: deeppink;
+    padding: 6px 10px;
+    border: 1px solid deeppink;
+    border-radius: 2px;
+    color: white;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.files-button__upload:focus {
+    outline: none;
+}
+.files-close {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    color: white;
+    cursor: pointer;
+}
+.form-upload.open {
+    top: 250px;
+    transition: 0.35s all ease;
+}
+.files-audio {
+    margin: 5px 0;
+}
